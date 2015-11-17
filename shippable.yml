@@ -1,6 +1,7 @@
 python:
   - "2.7"
 language: python
+
 install: pip install --use-mirrors -r requirements.txt
 
 
@@ -9,3 +10,4 @@ script:
 
 
 ##testing PR1 on prod
+archive: true
