@@ -4,9 +4,12 @@ language: python
 
 install: pip install --use-mirrors -r requirements.txt
 
+env:
+ - secure: qftOU5of3m4YDn/Iez9yN2zTOXsERAGHGy0XYLb2/UFGk92AbaYG3IYnZhitW5L6rvQreFzyOn9KNSgMahKmxXMrhNCMQv6dWDfNl0eUBc2cSwo92ty67RmO/N4AFYt+VL7kTQlckQWhQZvsdcDY9YUa89jlCZYfcqOH4EnuRzxjiVNleTFhgcy74ZWFpejgnOJkb6KYr12t5AvNSekcTC4pcnlftWXJfi2HrQYKCKGX9Vhf/cfBGwySKxApQoglNibx5XYT53fqdZL6PvmprqbRQIV7DNViPDrN5sr+75LP37krwVN99wGNPVeNPF7hdOxa6nH+qcLf69sxOusc5A==
 
 script:
   - python sqliteSample.py
+  - echo $key1
 
 
 ##testing PR1 on prod
